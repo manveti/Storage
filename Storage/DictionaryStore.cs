@@ -6,7 +6,7 @@ using System.Runtime.Serialization.Formatters.Binary;
 
 namespace Storage {
     [Serializable]
-    class DictionaryStore<TKey, TValue> : Dictionary<TKey, TValue> {
+    public class DictionaryStore<TKey, TValue> : Dictionary<TKey, TValue> {
         private String path;
 
         public DictionaryStore(String path) {
